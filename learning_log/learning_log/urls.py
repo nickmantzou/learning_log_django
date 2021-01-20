@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('users/', include('users.urls')),
     path('', include('learning_logs.urls')),   # blank string is referring to the local host 8000 page - base url
 ]
